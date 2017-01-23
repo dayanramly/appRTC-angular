@@ -1,0 +1,1 @@
+!function(){function a(a,t){return{loadData:loadData}}angular.module("apprtc").factory("getDataFromAPI",a),a.$inject=["$http","LocalStorage"]}(),function(){function a(a,t){}angular.module("apprtc").controller("MainController",a),a.$inject=["LocalStorage","QueryService"]}();

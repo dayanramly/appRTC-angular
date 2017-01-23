@@ -10,7 +10,6 @@
     "angularjs"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/jbutko/AngularJS-Boilerplate",
   "private": false,
   "ignore": [
     "**/.*",
