@@ -2358,7 +2358,7 @@ select{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAA
 .timeline-video .timeline-video-left .timeline-video-left-content .profile-menu ul li span.user-action a:hover i{color:#8BC34A}
 .timeline-video .timeline-video-left .timeline-video-left-content .profile-menu ul li:hover{background:#fafafa}
 .timeline-video .timeline-video-content{width:67%}
-.timeline-video .timeline-video-content .video-content{border:1px solid #e6e6e6;padding:10px;position:relative;background-color:#fff}
+.timeline-video .timeline-video-content .video-content{border:1px solid #e6e6e6;padding:10px;position:relative}
 .timeline-video .timeline-video-content .video-content .col-md-12{padding:0}
 .timeline-video .timeline-video-content .video-content .col-md-12 .video-wrapper{height:500px;background:#ccc}
 .timeline-video .timeline-video-content .video-content .col-md-12 .video-wrapper img{width:100%;height:500px;object-fit:cover;object-position:50% 50%}
