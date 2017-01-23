@@ -39,9 +39,9 @@
   "scripts": {
     "postinstall": "bower install --no-interactive --allow-root"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jbutko/AngularJS-Boilerplate.git"
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
   },
   "keywords": [
     "angular",
@@ -52,11 +52,9 @@
     "single-page",
     "spa"
   ],
-  "author": "Jozef Butko",
-  "docs": "https://github.com/jbutko/AngularJS-Boilerplate/blob/master/README.md",
-  "bugs": {
-    "url": "https://github.com/jbutko/AngularJS-Boilerplate/issues"
-  },
-  "homepage": "https://github.com/jbutko/AngularJS-Boilerplate",
-  "dependencies": {}
+  "author": "Dayan Ramly Ramadhan",
+  "dependencies": {
+    "bower": "1.7.1",
+    "express": "4.13.3"
+  }
 }
