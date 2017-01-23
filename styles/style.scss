@@ -1,0 +1,49 @@
+// normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
+
+//bootstrap 
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Sass color
+@import "partials/color";
+
+// Helpers
+@import "partials/helpers";
+
+// typography
+@import "partials/typography";
+
+// icon
+@import "partials/icon";
+
+// Sass functions
+@import "partials/functions";
+
+// import mixins
+@import "partials/mixins";
+
+// default
+@import "partials/base";
+
+// default
+@import "partials/default";
+
+/*********************
+IMPORTING MODULES
+*********************/
+
+// alert boxes
+@import "modules/alerts";
+
+// buttons
+@import "modules/buttons";
+
+// forms (inputs & labels)
+@import "modules/forms";
+
+/********************* 
+PAGES
+*********************/
+
+//message
+@import "pages/messages";

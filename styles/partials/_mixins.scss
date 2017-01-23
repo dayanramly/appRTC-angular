@@ -1,0 +1,111 @@
+/******************************************************************
+
+Mixins
+
+Based on: Bones - github.com/eddiemachado/bones
+
+******************************************************************/
+
+/*
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+
+@mixin transition($transition...) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit-", "" );
+  @each $prefix in $prefixes {
+    #{$prefix}transition: $transition;
+  }
+}
+
+/*********************
+CSS3 GRADIENTS
+*********************/
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+
+/*********************
+BOX SIZING
+*********************/
+
+/* @include box-sizing(border-box); */
+@mixin box-sizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing:    $type;
+	-ms-box-sizing:     $type;
+	box-sizing:         $type;
+}
+
+
+@mixin bgr-transparent($color, $alpha){
+	background: rgba($color, $alpha);
+}
+@mixin font-transparent($color, $alpha){
+	color: rgba($color, $alpha);
+}
+@mixin padding($top, $right, $bottom, $left){
+	padding-top: $top;
+	padding-right: $right;
+	padding-bottom: $bottom;
+	padding-left: $left;
+}
+@mixin margin($top, $right, $bottom, $left){
+	margin-top: $top;
+	margin-right: $right;
+	margin-bottom: $bottom;
+	margin-left: $left;
+}
+@mixin btn-color($bgr, $border, $color){
+	background: $bgr;
+	color: $color !important;
+	border: 1px solid $border;
+	i{
+		color: $color !important;
+	}
+	@if $bgr == 'none'{
+		&:hover{
+			background: none;
+		}
+		&:focus,&:hover,&:active,&:visited{
+			color: $color;
+		}
+	}
+	@else{
+		&:hover{
+			background: darken($bgr,6.5%);
+		}
+		&:focus,&:hover,&:active,&:visited{
+			color: darken($color,6.5%);
+		}
+	}
+	&:focus,&:hover,&:active,&:visited{
+		outline: 0 !important;
+		outline-offset: 0 !important;
+		box-shadow: none;
+	}
+}
+@mixin link-color($color){
+	color: $color;
+	&:hover{
+		color: darken($color,10%);
+	}
+}
+@mixin input-remove-outline(){
+	&:focus{
+		border-color: none !important;
+		box-shadow: none !important;
+	}
+}
+@mixin background-border($height, $width, $color){
+	background: $color;
+	width: $height+10;
+	height: $width+10;
+}

@@ -1,0 +1,68 @@
+/******************************************************************
+
+Buttons
+
+******************************************************************/
+
+.btn-link{
+	@include link-color($white-link);
+}
+.btn-round{
+	border-radius: 10em;
+}
+.btn-semi-round{
+	border-radius: .5em;
+}
+.btn-square{
+	border-radius: 0;
+}
+.btn-blue{
+	@include btn-color($primary-blue, $primary-blue, $white);
+}
+.btn-half-blue{
+	@include btn-color($primary-half-blue, $primary-half-blue, $white);
+}
+.btn-green{
+	@include btn-color($green, $green, $white);
+}
+.btn-red{
+	@include btn-color($red, $red, $white);
+}
+.btn-danger{
+	@include btn-color($red, $red, $white);
+}
+.btn-white{
+	@include btn-color($white, $white, $primary-blue);
+}
+.btn-grey{
+	@include btn-color($grey-status-bottom, $grey-btn-outline, $grey-btn-color);
+}
+.btn-light-grey{
+	@include btn-color($grey-button-cover, $grey-button-cover, $primary-blue);
+}
+.btn-big{
+	padding: 12px 15px;
+}
+.btn-normal{
+	padding: 6px 15px;
+}
+.btn-small{
+	padding: 4px 15px;
+	font-size: .9em;
+	i{
+		padding-right: 5px;
+		&:before{
+			font-size: .9em;
+		}
+	}
+}
+.btn-semi-small{
+	padding: 6px 15px;
+	font-size: 1em;
+	i{
+		padding-right: 5px;
+		&:before{
+			font-size: 1em;
+		}
+	}
+}
