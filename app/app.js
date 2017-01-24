@@ -1,14 +1,3 @@
-/**
- * 
- * AngularJS Boilerplate
- * @description           Description
- * @author                Jozef Butko // www.jozefbutko.com/resume
- * @url                   www.jozefbutko.com
- * @version               1.1.7
- * @date                  March 2015
- * @license               MIT
- * 
- */
 ;(function() {
 
 
@@ -28,9 +17,6 @@
 
   /**
    * App routing
-   *
-   * You can leave it here in the config section or take it out
-   * into separate file
    * 
    */
   function config($routeProvider, $locationProvider, $httpProvider, $compileProvider) {

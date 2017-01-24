@@ -5,9 +5,9 @@
 		margin-right: 3%;
 		padding-left: 0;
 		padding-right: 0;
-		border-right: 5px solid #eeeeee;
 		.timeline-video-left-content{
 			border: 0;
+			border-right: 5px solid #eeeeee;
 			.top-profile{
 				padding: 10px 15px 25px;
 				background: #fafafa;
@@ -88,7 +88,7 @@
 									max-width: 30px;
 									font-size: .7em;
 									line-height: normal;
-									color: #cccccc;
+									color: $grey;
 								}
 							}
 							&.user-action{
@@ -105,7 +105,7 @@
 									i{
 										font-size: 1.4em;
 										line-height: 1.5;
-										color: #cccccc;
+										color: $grey;
 										&.call{
 
 										}
@@ -139,7 +139,7 @@
 		width: 67%;
 
 		.video-content{
-			border: 1px solid #e6e6e6;
+			border: 1px solid $grey-outline;
 			padding: 10px;
 			position: relative;
 			.col-md-12{

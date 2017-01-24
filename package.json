@@ -1,8 +1,8 @@
 {
-  "name": "angularjs-boilerplate",
-  "version": "1.1.7",
+  "name": "intellinum apprtc",
+  "version": "0.1.0",
   "license": "MIT",
-  "description": "Simple AngularJS Boilerplate to kick start your new project with SASS support and Gulp watch/build tasks",
+  "description": "Online video call from intellinum",
   "main": "app/app.js",
   "devDependencies": {
     "browser-sync": "^1.9.1",
@@ -52,7 +52,7 @@
     "single-page",
     "spa"
   ],
-  "author": "Dayan Ramly Ramadhan",
+  "author": "Dayan Ramly <dayanramly@gmail.com>",
   "dependencies": {
     "bower": "^1.7.1",
     "express": "^4.13.3",

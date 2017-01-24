@@ -1,17 +1,9 @@
-/******************************************************************
-
-Mobile
-
-******************************************************************/
-
-/*********************
-GENERAL STYLES
-*********************/
+/******** GENERAL STYLE **********/
 
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	background-color: $primary-grey-background;
+	background-color: $grey-background;
 	color: $text-color;
 	font-family: $font;
 	line-height: 1.5;
@@ -31,19 +23,6 @@ ul {
 	margin: 0 !important;
 	padding: 0;
 }
-
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	width: 96%;
-	margin: 0 auto;
-}
-
-/*********************
-LINK STYLES
-*********************/
 
 a, a:visited {
 	color: $link-color;
@@ -71,10 +50,6 @@ a, a:visited {
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
 	}
 }
-
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;

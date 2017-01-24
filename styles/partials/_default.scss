@@ -1,5 +1,7 @@
+/******** DEFAULT STYLE **********/
+
 .bgr-grey{
-	background: $primary-grey-background;
+	background: $grey-background;
 }
 .navbar-default{
 	.navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
@@ -165,15 +167,6 @@
 						}
 					}
 				}				
-				// &.notification{
-				// 	display: inline-block;
-				// 	text-align: center;
-				// 	width: 32%;
-				// 	border-right: 1px solid $grey-outline;
-				// 	&.last{
-				// 		border-right: 0;
-				// 	}
-				// }
 			}
 		}
 	}

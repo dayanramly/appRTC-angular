@@ -13,7 +13,6 @@
                         <a href="">View Profile</a>
                     </div>
                     <div class="video-counter">
-                        <!-- <h3 id="username"></h3> -->
                         <div class="panel panel-default" id="panel-video">
                             <div class="panel-body">
                                 <img ng-src="images/team02.jpg">
@@ -25,95 +24,15 @@
                 <div class="profile-menu">
                     <h4>Who's online</h4>
                     <ul>
-                        <li>
+                        <li ng-repeat="user in main.chatUser">
                             <span class="user-active">
-                                <i class="ion-record icon-green"></i> Dayan Ramly
+                                <i class="ion-record" ng-class="{ 'icon-green': user.status }"></i> {{user.name}}
                             </span>
                             <span class="user-action">
                                 <a href="#">
                                     <i class="ion-ios-telephone call"></i>
                                 </a>
-                                <a href="#" onclick="initChat(1,'Dayan Ramly')">
-                                    <i class="ion-ios-chatbubble chat"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="ion-ios-videocam video"></i>
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="user-active">
-                                <i class="ion-record"></i> Galih Dwi Jatmiko
-                            </span>
-                            <span class="user-action">
-                                <a href="#">
-                                    <i class="ion-ios-telephone"></i>
-                                </a>
-                                <a href="#" onclick="initChat(2,'Galih Dwi Jatmiko')">
-                                    <i class="ion-ios-chatbubble chat"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="ion-ios-videocam video"></i>
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="user-active">
-                                <i class="ion-record icon-green"></i> Romi Halimman
-                            </span>
-                            <span class="user-action">
-                                <a href="#">
-                                    <i class="ion-ios-telephone call"></i>
-                                </a>
-                                <a href="#" onclick="initChat(3,'Romi Halimman')">
-                                    <i class="ion-ios-chatbubble chat"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="ion-ios-videocam video"></i>
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="user-active">
-                                <i class="ion-record"></i> Yanuar Arifin
-                            </span>
-                            <span class="user-action">
-                                <a href="#">
-                                    <i class="ion-ios-telephone call"></i>
-                                </a>
-                                <a href="#" onclick="initChat(4,'Yanuar Arifin')">
-                                    <i class="ion-ios-chatbubble chat"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="ion-ios-videocam video"></i>
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="user-active">
-                                <i class="ion-record"></i> Adi Setiawan
-                            </span>
-                            <span class="user-action">
-                                <a href="#">
-                                    <i class="ion-ios-telephone call"></i>
-                                </a>
-                                <a href="#" onclick="initChat(5,'Adi Setiawan')">
-                                    <i class="ion-ios-chatbubble chat"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="ion-ios-videocam video"></i>
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="user-active">
-                                <i class="ion-record"></i> Jonie Andrean
-                            </span>
-                            <span class="user-action">
-                                <a href="#">
-                                    <i class="ion-ios-telephone call"></i>
-                                </a>
-                                <a href="#" onclick="initChat(6,'Jonie Andrean')">
+                                <a ng-click="main.OpenPopupWindow(user.name)"">
                                     <i class="ion-ios-chatbubble chat"></i>
                                 </a>
                                 <a href="#">

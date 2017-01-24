@@ -1,10 +1,4 @@
-/******************************************************************
-
-Mixins
-
-Based on: Bones - github.com/eddiemachado/bones
-
-******************************************************************/
+/******** MIXINS **********/
 
 /*
 USAGE: @include transition(all 0.2s ease-in-out);
@@ -18,9 +12,7 @@ USAGE: @include transition(all 0.2s ease-in-out);
   }
 }
 
-/*********************
-CSS3 GRADIENTS
-*********************/
+/******** CSS3 GRADIENTS **********/
 
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 @mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
@@ -32,9 +24,7 @@ CSS3 GRADIENTS
 	background-image: linear-gradient(to bottom, $from, $to);
 }
 
-/*********************
-BOX SIZING
-*********************/
+/******** BOX SIZING **********/
 
 /* @include box-sizing(border-box); */
 @mixin box-sizing($type: border-box) {
@@ -44,6 +34,7 @@ BOX SIZING
 	box-sizing:         $type;
 }
 
+/******** CUSTOM MIXIN **********/
 
 @mixin bgr-transparent($color, $alpha){
 	background: rgba($color, $alpha);

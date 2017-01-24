@@ -11,26 +11,27 @@
   .module('apprtc')
   .controller('MainController', MainController);
 
-  MainController.$inject = ['LocalStorage', 'QueryService'];
+  MainController.$inject = ['LocalStorage', 'QueryService', '$window'];
 
 
-  function MainController(LocalStorage, QueryService) {
+  function MainController(LocalStorage, QueryService, $window) {
 
     // 'controller as' syntax
     var vm = this;
 
+    vm.chatUser = [
+    { "name": "Dayan Ramly", "status": true}, 
+    { "name": " Romi Halimman", "status": true}, 
+    { "name": "Galih Dwi Jatmiko", "status": false}, 
+    { "name": "Adi Setiawan", "status": false}, 
+    { "name": "Yanuar Arifin", "status": true}, 
+    ];
 
-    ////////////  function definitions
+    vm.OpenPopupWindow = function (name) {
+      var popup = $window.open("Popup.html", 'PopUp'+name , "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=500,width=380,height=480");
+      popup.Name = name;
+    }
 
-
-    /**
-     * Load some data
-     * @return {Object} Returned object
-     */
-    // QueryService.query('GET', 'posts', {}, {})
-    //   .then(function(ovocie) {
-    //     self.ovocie = ovocie.data;
-    //   });
   }
 
 

@@ -1,53 +1,40 @@
-$dark-blue: #1c2e45;
-$light-blue: #3069b1;
-$primary-red: #d74141; //primary
-$primary-blue: #4183d7; //primary blue
-$primary-half-blue: #a0c1eb; //Half blue
-$bright-blue: #aacbf5; //bright blue
-$blue-timeline-title: #3575bd; //blue timeline title
-$blue-image-timeline: #aacbf5; //blue image timeline
-$blue-login-v1: #689ee3;
-$primary-grey-background: #f6f6f6; //primary grey background
-$grey-menu-left-icon: #aaaaaa; //grey menu left - icon
-$grey-timeline: #575656; //grey timeline
-$grey-date: #a1a1a1; //grey date
-$grey-search: #e9e9e9; //grey search
-$grey-search-color: #cccbcb; //grey search color
-$grey-title-widget: #9e9e9e; //grey title widget
-$grey-outline: #e6e6e6; //line header
-$grey-title-default: #5c5c5c;
-$grey-status-bottom: #efeeee; //bottom color for status
-$grey-btn-color: #aaa9a9;
-$grey-btn-outline: #d4d4d4;
-$grey-icon-status: #9b9a9a; //grey for icon status
-$grey-comment-timeline: #fbfbfb; //background in comment timeline
-$grey-status-text-color: #3b3b3b; //default status color
-$grey-no-data: #bdbdbd; //posting timeline no data
-$grey-border-bottom: #e1e1e1; //grey footer border bottom
-$grey-timeline-widget-mutual-friends: #939393;
-$grey-widget-sugested-page: #b2b2b2;
-$grey-profile-menu-color: #585858;
-$grey-button-cover: #ebebeb;
-$link-bottom-background: #f1f1f1; //video bottom background
-$link-bottom-title: #2f2f2f; //video bottom title
-$link-bottom-content: #737373; //video bottom content
-$orange: #ec983e; //orange notif
-$green: #7cc576; //green
-$loved: #d86b54; //pink
-$white: #ffffff; //white color
-$white-link: #fefefe; //white for link
-$blue-login:#567090; //login color
-$black: #000000;
-$red: #c61318;
-$message-grey: #272727;
-$message-grey-list-name: #606060;
-$message-grey-list-status: #979797;
-$message-grey-comment-bgr: #f0f0f0;
+/******** GENERAL STYLE **********/
 
-$link-color:        $light-blue;
-$link-hover:        darken($link-color, 9%);
-$border-color:      #ccc;
-$disabled-gray:     #cfcfcf;
-$alert-red:			red;
-$alert-green:		#645564;
-$alert-blue:		blue;
+// blue
+$dark-blue: 			#1c2e45;
+$light-blue: 			#3069b1;
+$blue-login:			#567090; //login color
+$primary-blue: 			#4183d7; //primary blue
+$primary-half-blue: 	#a0c1eb; //Half blue
+$blue-login-v1: 		#689ee3;
+
+// white
+$white: 				#ffffff; //white color
+$white-link: 			#fefefe; //white for link
+
+// rgb
+$black: 				#000000;
+$red: 					#c61318;
+$green: 				#7cc576; //green
+
+// grey
+$grey: 					#cccccc;
+$grey-outline: 			#e6e6e6;
+$grey-background: 		#f6f6f6; //primary grey background
+$grey-title-default: 	#5c5c5c;
+$text-color: 			#555555;
+$grey-search-color: 	#cccbcb; //grey search color
+$grey-title-widget: 	#9e9e9e; //grey title widget
+$grey-status-bottom: 	#efeeee; //bottom color for status
+$grey-btn-color: 		#aaa9a9;
+$grey-btn-outline: 		#d4d4d4;
+$grey-button-cover: 	#ebebeb;
+
+// default
+$link-color:        	$light-blue;
+$link-hover:        	darken($link-color, 9%);
+$border-color:      	#ccc;
+$disabled-gray:     	#cfcfcf;
+$alert-red:				red;
+$alert-green:			#645564;
+$alert-blue:			blue;
