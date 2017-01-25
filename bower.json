@@ -1,5 +1,5 @@
 {
-  "name": "intellinum apprtc",
+  "name": "apprtc",
   "version": "0.1.0",
   "authors": [
     "Dayan Ramly <dayanramly@gmail.com>"
@@ -25,7 +25,8 @@
     "OwlCarousel": "https://github.com/OwlFonk/OwlCarousel.git#~1.3.2",
     "bootstrap-sass": "^3.3.7",
     "Ionicons": "ionicons#^2.0.1",
-    "angular-bootstrap": "^2.4.0"
+    "angular-bootstrap": "^2.4.0",
+    "angular-ui-router": "^0.4.2"
   },
   "resolutions": {
     "angular": "~1.3.13"

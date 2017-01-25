@@ -7,8 +7,7 @@
  */
  ;(function() {
 
-  angular
-  .module('apprtc')
+  angular.module('apprtc.home')
   .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService', '$window'];
@@ -28,7 +27,7 @@
     ];
 
     vm.OpenPopupWindow = function (name) {
-      var popup = $window.open("Popup.html", 'PopUp'+name , "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=500,width=380,height=480");
+      var popup = $window.open("popup.html", 'PopUp'+name , "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=500,width=380,height=480");
       popup.Name = name;
     }
 

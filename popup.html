@@ -12,7 +12,7 @@
     <nav class="navbar navbar-default nav-header nav-chat">
         <div class="container">
             <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="padding:10px"><img src="images/logo_white.png" style="height:30px"></a>
+                <a class="navbar-brand" href="#" style="padding:10px"><img src="images/logo_white.png" style="height:30px"></a>
             </div>
         </div>
     </nav>
@@ -31,12 +31,12 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-2 avatar">
-                            <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="images/people-10.jpg" class=" img-responsive ">
                             </div>
                         </div>
                         <div class="row msg_container base_receive">
                             <div class="col-md-2 col-xs-2 avatar">
-                            <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="images/people-10.jpg" class=" img-responsive ">
                             </div>
                             <div class="col-md-10 col-xs-10">
                                 <div class="messages msg_receive">
@@ -47,7 +47,7 @@
                         </div>
                         <div class="row msg_container base_receive">
                             <div class="col-md-2 col-xs-2 avatar">
-                            <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="images/people-10.jpg" class=" img-responsive ">
                             </div>
                             <div class="col-xs-10 col-md-10">
                                 <div class="messages msg_receive">
@@ -64,12 +64,12 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-2 avatar">
-                            <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="images/people-10.jpg" class=" img-responsive ">
                             </div>
                         </div>
                         <div class="row msg_container base_receive">
                             <div class="col-md-2 col-xs-2 avatar">
-                            <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="images/people-10.jpg" class=" img-responsive ">
                             </div>
                             <div class="col-xs-10 col-md-10">
                                 <div class="messages msg_receive">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-2 avatar">
-                            <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="images/people-10.jpg" class=" img-responsive ">
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,9 @@
     <script type="text/javascript">
         var app = angular.module('chatApp', [])
         app.controller('chatAppController', function ($scope, $window) {
-            document.title=$window.Name + " - chats";
+            if($window.Name !== undefined) {
+                document.title=$window.Name + " - chats";
+            }
         });
     </script>
 </body>

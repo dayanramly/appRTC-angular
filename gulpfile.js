@@ -24,6 +24,21 @@ var gulp            = require('gulp'),
     del             = require('del'),
     runSequence     = require('run-sequence');
 
+var js =['app/app.js',
+         'app/config.js',
+         'app/**/*.module.js',
+         'app/**/*.js',
+         'app/**/**/*.module.js',
+         'app/**/**/*.js',
+         'app/**/**/**/*.module.js',
+         'app/**/**/**/*.js',
+         'app/**/**/**/**/*.module.js',
+         'app/**/**/**/**/*.js',
+         'app/**/**/**/**/**/*.module.js',
+         'app/**/**/**/**/**/*.js',
+         'app/**/**/**/**/**/**/*.module.js',
+         'app/**/**/**/**/**/**/*.js'
+        ];
 
 // optimize images
 gulp.task('images', function() {
@@ -53,6 +68,14 @@ gulp.task('minify-js', function() {
     .pipe(gulp.dest('./_build/'));
 });
 
+// appscript JS
+gulp.task('appscript', function() {
+  gulp.src(js)
+    .pipe($.uglify())
+    .pipe($.concat('scripts.js'))
+    .pipe(gulp.dest('./_build/'));
+});
+
 // minify CSS
 gulp.task('minify-css', function() {
   gulp.src(['./styles/**/*.css', '!./styles/**/*.min.css'])
@@ -70,7 +93,7 @@ gulp.task('minify-html', function() {
     conditionals: true
   };
 
-  gulp.src('./*.html')
+  gulp.src('./**/*.html')
     .pipe($.minifyHtml(opts))
     .pipe(gulp.dest('./_build/'));
 });
@@ -179,7 +202,7 @@ require('events').EventEmitter.prototype._maxListeners = 100;
 // index.html build
 // script/css concatenation
 gulp.task('usemin', function() {
-  return gulp.src('./index.html')
+  return gulp.src('./*.html')
     // add templates path
     .pipe($.htmlReplace({
       'templates': '<script type="text/javascript" src="js/templates.js"></script>'
@@ -233,14 +256,14 @@ gulp.task('build:size', function() {
 // default task to be run with `gulp` command
 // this default task will run BrowserSync & then use Gulp to watch files.
 // when a file is changed, an event is emitted to BrowserSync with the filepath.
-gulp.task('default', ['browser-sync', 'sass', 'minify-css'], function() {
+gulp.task('default', ['browser-sync', 'sass', 'minify-css', 'appscript'], function() {
   gulp.watch('styles/*.css', function(file) {
     if (file.type === "changed") {
       reload(file.path);
     }
   });
-  gulp.watch(['*.html', 'components/**/*.html', 'views/*.html'], ['bs-reload']);
-  gulp.watch(['app/*.js', 'components/**/*.js', 'js/*.js'], ['bs-reload']);
+  gulp.watch(['*.html', 'components/**/*.html', 'views/**/*.html'], ['bs-reload']);
+  gulp.watch([js, 'components/**/*.js', 'js/*.js'], ['bs-reload']);
   gulp.watch('styles/**/*.scss', ['sass', 'minify-css']);
 });
 

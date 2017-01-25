@@ -32,13 +32,16 @@
 // // alert boxes
 // @import "modules/alerts";
 
-// // buttons
-// @import "modules/buttons";
+// buttons
+@import "modules/buttons";
 
-// // forms (inputs & labels)
-// @import "modules/forms";
+// forms (inputs & labels)
+@import "modules/forms";
 
 /******** PAGES **********/
+
+//login
+@import "pages/login";
 
 //message
 @import "pages/messages";

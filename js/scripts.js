@@ -5,9 +5,9 @@
 	 * apps, if you need any jQuery functionality create a directive
 	 * 
 	 */
-  $(document).ready(function() {
-    
-  });
+	 $(document).ready(function() {
+
+	 });
 
 
-})( jQuery );
+	})( jQuery );

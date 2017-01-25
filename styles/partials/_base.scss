@@ -25,13 +25,11 @@ ul {
 }
 
 a, a:visited {
-	color: $link-color;
 	text-decoration: none;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
-		text-decoration: underline;
+		text-decoration: none;
 		cursor: pointer;
 	}
 

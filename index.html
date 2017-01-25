@@ -38,20 +38,9 @@
 		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- Navigation -->
-		<main-nav></main-nav>
-
 		<!-- Main view for templates -->
-		<div data-ng-view=""></div>
-
-		<!-- footer section -->
-		<footer class="container-fluid footer-section">
-		    <div class="row footer-copyright">
-		        <div class="col-md-12 text-center">
-		            © 2017 · <a href="http://intellinum.com">Intellinum</a>
-		        </div>
-		    </div>
-		</footer>
+		<div ui-view></div>
+		
 	</body>
 
 	<!-- Vendors -->
@@ -69,7 +58,7 @@
 	<!-- Angular external libraries for application -->
 	<!-- build:angularlibs js/angularlibs.js -->
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 	<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 	<!-- endbuild -->
@@ -88,7 +77,12 @@
 	<!-- Application sections -->
 	<!-- build:mainapp js/mainapp.js -->
 	<script type="text/javascript" src="app/factory.js"></script>
-	<script type="text/javascript" src="app/controller.js"></script>
+	<script type="text/javascript" src="app/auth/auth.module.js"></script>
+	<script type="text/javascript" src="app/auth/auth.config.js"></script>
+	<script type="text/javascript" src="app/auth/auth.controller.js"></script>
+	<script type="text/javascript" src="app/home/home.module.js"></script>
+	<script type="text/javascript" src="app/home/home.config.js"></script>
+	<script type="text/javascript" src="app/home/home.controller.js"></script>
 	<!-- endbuild -->
 
 	<!-- templates from $templateCache -->
