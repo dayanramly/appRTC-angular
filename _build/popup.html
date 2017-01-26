@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- <title>Dayan Ramly Chat</title> -->
     <title></title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://salty-springs-35646.herokuapp.com/styles/style.css" />
 </head>
 <body class="bgr-grey" ng-app="chatApp" ng-controller="chatAppController">
     <nav class="navbar navbar-default nav-header nav-chat">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" style="padding:10px"><img src="images/logo_white.png" style="height:30px"></a>
+                <a class="navbar-brand" href="#" style="padding:10px"><img src="https://salty-springs-35646.herokuapp.com/images/logo_white.png" style="height:30px"></a>
             </div>
         </div>
     </nav>
@@ -31,12 +31,12 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-2 avatar">
-                                <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="https://salty-springs-35646.herokuapp.com/images/people-10.jpg" class=" img-responsive ">
                             </div>
                         </div>
                         <div class="row msg_container base_receive">
                             <div class="col-md-2 col-xs-2 avatar">
-                                <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="https://salty-springs-35646.herokuapp.com/images/people-10.jpg" class=" img-responsive ">
                             </div>
                             <div class="col-md-10 col-xs-10">
                                 <div class="messages msg_receive">
@@ -47,7 +47,7 @@
                         </div>
                         <div class="row msg_container base_receive">
                             <div class="col-md-2 col-xs-2 avatar">
-                                <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="https://salty-springs-35646.herokuapp.com/images/people-10.jpg" class=" img-responsive ">
                             </div>
                             <div class="col-xs-10 col-md-10">
                                 <div class="messages msg_receive">
@@ -64,12 +64,12 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-2 avatar">
-                                <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="https://salty-springs-35646.herokuapp.com/images/people-10.jpg" class=" img-responsive ">
                             </div>
                         </div>
                         <div class="row msg_container base_receive">
                             <div class="col-md-2 col-xs-2 avatar">
-                                <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="https://salty-springs-35646.herokuapp.com/images/people-10.jpg" class=" img-responsive ">
                             </div>
                             <div class="col-xs-10 col-md-10">
                                 <div class="messages msg_receive">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-2 avatar">
-                                <img src="images/people-10.jpg" class=" img-responsive ">
+                                <img src="https://salty-springs-35646.herokuapp.com/images/people-10.jpg" class=" img-responsive ">
                             </div>
                         </div>
                     </div>
@@ -103,28 +103,21 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="js/nonangular/jquery-1.11.2.min.js"></script>
-    <!-- endbuild -->
+
+    <script src="https://salty-springs-35646.herokuapp.com/js/nonangularlibs.js"></script>
 
     <!-- Non-angular libraries -->
-    <!-- build:libs js/libs.js -->
-    <script type="text/javascript" src="js/nonangular/lodash.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
-    <!-- endbuild -->
+    <script src="https://salty-springs-35646.herokuapp.com/js/libs.js"></script>
 
     <!-- Angular external libraries for application -->
-    <!-- build:angularlibs js/angularlibs.js -->
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <!-- endbuild -->
+    <script src="https://salty-springs-35646.herokuapp.com/js/angularlibs.js"></script>
 
     <!-- Angular components -->
-    <!-- build:appcomponents js/appcomponents.js -->
-    <script type="text/javascript" src="app/app.js"></script>
-    <script type="text/javascript" src="app/config.js"></script>
+    <script src="https://salty-springs-35646.herokuapp.com/js/appcomponents.js"></script>
+
+    <!-- Application sections -->
+    <script src="https://salty-springs-35646.herokuapp.com/js/mainapp.js"></script>
+
     <script type="text/javascript">
         var app = angular.module('chatApp', [])
         app.controller('chatAppController', function ($scope, $window) {
