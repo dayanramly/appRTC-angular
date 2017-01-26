@@ -332,7 +332,7 @@ html{font-size:10px;-webkit-tap-highlight-color:transparent}
 body{font-size:14px}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#337ab7;text-decoration:none}
-a:focus,a:hover{color:#23527c;text-decoration:underline}
+a:focus,a:hover{color:#23527c}
 a:focus{outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
 .img-responsive{display:block;height:auto}
 .img-rounded{border-radius:6px}
@@ -2226,7 +2226,7 @@ body{-webkit-font-smoothing:antialiased;background-color:#f6f6f6;color:#555;font
 html{height:100%;box-sizing:border-box}
 *,:after,:before{box-sizing:inherit}
 ul{list-style-type:none;margin:0!important;padding:0}
-a:focus,a:hover,a:visited:focus,a:visited:hover{cursor:pointer}
+a:focus,a:hover,a:visited:focus,a:visited:hover{text-decoration:none;cursor:pointer}
 a:link,a:visited:link{-webkit-tap-highlight-color:rgba(0,0,0,.3)}
 .h1,.h2,.h3,.h4,.h5,h1,h2,h3,h4,h5{text-rendering:optimizelegibility}
 .bgr-grey{background:#f6f6f6}
